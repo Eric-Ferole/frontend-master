@@ -8,10 +8,6 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
 }
@@ -33,6 +29,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  position: relative;
   font-family: Kumbh Sans;
   background-color: #FAFAFA;
   background-image: url("../images/background-header-edit.svg");
@@ -71,6 +68,10 @@ header .header__content {
   margin: 0 24px 100px 24px;
 }
 
+header .header__content--is-signup {
+  margin-bottom: 64px;
+}
+
 header .header__content h1 {
   font-size: 2.5rem;
   font-style: normal;
@@ -78,6 +79,10 @@ header .header__content h1 {
   line-height: 48px;
   margin-bottom: 24px;
   color: #333950;
+}
+
+header .header__content .title-signup {
+  margin-bottom: 16px;
 }
 
 header .header__content .header__description {
@@ -102,6 +107,8 @@ header .header__content .button {
   line-height: 1.75rem;
   color: #fff;
   text-decoration: none;
+  -webkit-box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+          box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
 }
 
 .cards {
@@ -201,28 +208,11 @@ header .header__content .button {
 }
 
 footer {
-  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #25293A;
   text-align: center;
-}
-
-footer::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  background-color: #25293A;
-  background-image: url("../images/bg-pattern-footer.svg");
-  background-repeat: no-repeat;
-  background-position: center 156px;
-  background-size: 1202px 1202px;
-  left: 0;
-  top: -894px;
-  z-index: -1;
-  height: 895px;
 }
 
 footer .counter__title {
@@ -235,6 +225,10 @@ footer .counter__title {
   text-transform: uppercase;
   margin-bottom: 18px;
   color: white;
+}
+
+footer .counter__title--is-dark {
+  color: #25293A;
 }
 
 footer .counter__title span {
@@ -294,5 +288,31 @@ footer .button {
   color: #fff;
   text-decoration: none;
   margin-bottom: 100px;
+}
+
+.form {
+  margin: 24px 24px 87px 24px;
+  background-color: #fff;
+  height: 465px;
+  border-radius: 13px;
+  margin-bottom: 87px;
+}
+
+.footer-background {
+  position: absolute;
+  width: 100%;
+  background-color: #25293A;
+  background-image: url("../images/bg-pattern-footer.svg");
+  background-position: center 750px;
+  background-size: 1202px 1202px;
+  height: 1248px;
+  z-index: -1;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  bottom: -87px;
+}
+
+.footer-background--is-signup {
+  height: 320px;
 }
 /*# sourceMappingURL=styles.css.map */

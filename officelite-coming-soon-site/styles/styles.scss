@@ -20,9 +20,9 @@ $warning: #F05B5B;
   margin: 0;
 }
 
-html, body {
-  height: 100%;
-}
+// html, body {
+//   height: 100%;
+// }
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -46,6 +46,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+  position: relative;
   font-family: Kumbh Sans;
   background-color: #FAFAFA;
   background-image: url("../images/background-header-edit.svg");
@@ -72,6 +73,9 @@ header {
   .header__content {
   text-align: center;
   margin: 0 24px 100px 24px;
+  &--is-signup {
+    margin-bottom: 64px;
+  }
   h1 {
     font-size: 2.5rem;
     font-style: normal;
@@ -79,6 +83,9 @@ header {
     line-height: 48px;
     margin-bottom: 24px;
     color: #333950;
+  }
+  .title-signup {
+    margin-bottom: 16px;
   }
   .header__description {
     font-family: Kumbh Sans;
@@ -101,6 +108,7 @@ header {
     line-height: 1.75rem;
     color: #fff;
     text-decoration: none;
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
   }
 }
 }
@@ -186,24 +194,9 @@ header {
 }
 
 footer {
-  position: relative;
+  // position: relative;
   flex-direction: column;
-  background-color: #25293A;
   text-align: center;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    background-color: #25293A;
-    background-image: url("../images/bg-pattern-footer.svg");
-    background-repeat: no-repeat;
-    background-position: center 156px;
-    background-size: 1202px 1202px;
-    left: 0;
-    top: -894px;
-    z-index: -1;
-    height: 895px;
-  }
   .counter__title {
     font-family: Kumbh Sans;
     font-size: 1rem;
@@ -214,6 +207,9 @@ footer {
     text-transform: uppercase;
     margin-bottom: 18px;
     color: white;
+    &--is-dark {
+      color: #25293A;
+    }
     span {
       color: $secondary;
     }
@@ -266,4 +262,26 @@ footer {
   }
 }
 
+.form {
+  margin: 24px 24px 87px 24px;
+  background-color: #fff;
+  height: 465px;
+  border-radius: 13px;
+  margin-bottom: 87px;
+}
+.footer-background {
+  position: absolute;
+  width: 100%;
+  background-color: #25293A;
+  background-image: url("../images/bg-pattern-footer.svg");
+  background-position: center 750px;
+  background-size: 1202px 1202px;
+  height: 1248px;
+  z-index: -1;
+  transform: rotate(180deg);
+  bottom: -87px;
+  &--is-signup {
+    height: 320px;
+  }
+}
 
