@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+}
+
+html {
+  /* margin: auto; */
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  color: #fff;
+  background: #0D1A2D;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  opacity: 0.2;
+
+}
+
+.c-Ntf {
+  position: relative;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 350px;
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 24px;
+  padding: 24px;
+  background: #14253D;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.c-Ntf__image {
+  position: relative;
+}
+
+.c-Ntf__over {
+  opacity: 0;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 246, 0.6);
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+.c-Ntf__over:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.c-Ntf__image img {
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.c-Ntf__content h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  transition: 0.2s
+}
+
+.c-Ntf__content h3:hover {
+  color: #00FFF6;
+  cursor: pointer;
+}
+
+.c-Ntf__content p {
+  font-style: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #8BACDA;
+}
+
+.c-Ntf__content {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 24px;
+}
+
+.c-Ntf__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-Ntf__price {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  color: #00FFF6;
+  
+}
+.c-Ntf__price > * {
+  padding-right: 8px;
+}
+
+.c-Ntf__date {
+  display: flex;
+  align-items: center;
+  color: #8BACDA;
+}
+
+.c-Ntf__date > * {
+  padding-right: 8px;
+}
+
+.c-Ntf__author {
+  display: flex;
+  align-items: center;
+  color: #8BACDA;
+}
+
+.c-Ntf__author a {
+  text-decoration: none;
+  color: white;
+}
+
+.c-Ntf__author img {
+  border-radius: 100%;
+  border: 1px solid #fff;
+  margin-right: 16px;
+}
+
+.attribution  {
+  margin: 40px 0;
+  font-size: 14px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .attribution a:hover {
+  text-decoration: underline;
+} */
+
+a:hover {
+  color: #00FFF6;
+  text-decoration: none;
+}

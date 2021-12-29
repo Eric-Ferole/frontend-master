@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Kumbh+Sans:wght@400;500;700&family=Manrope:wght@500;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: Kumbh Sans;
+  background-color: #FAFAFA;
+  background-image: url("../images/background-header-edit.svg");
+  background-repeat: no-repeat;
+  background-position: center -168px;
+  background-size: 458px 458px;
+}
+
+header .header__logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 46px 0 80px 0;
+}
+
+header .header__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 64px;
+}
+
+header .header__image img {
+  width: 171px;
+}
+
+header .header__content {
+  text-align: center;
+  margin: 0 24px 100px 24px;
+}
+
+header .header__content h1 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 24px;
+  color: #333950;
+}
+
+header .header__content .header__description {
+  font-family: Kumbh Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+  color: #747B95;
+  margin-bottom: 24px;
+}
+
+header .header__content .button {
+  display: inline-block;
+  padding: 14px 41px;
+  background: #5175FF;
+  border-radius: 28px;
+  font-family: Kumbh Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 24px 100px 24px;
+  gap: 32px;
+}
+
+.cards .card {
+  text-align: center;
+  padding: 40px 0;
+  color: #333950;
+  background-color: #fff;
+  border-radius: 13px;
+}
+
+.cards .card--is-blue {
+  background-color: #5175FF;
+  background-image: url("../images/bg-pattern-pricing.svg");
+  background-position: center -380px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.cards .card__header h2 {
+  font-family: Kumbh Sans;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin-bottom: 40px;
+}
+
+.cards .card__header .card__price {
+  font-family: Kumbh Sans;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  margin-bottom: 8px;
+}
+
+.cards .card__header .card__description {
+  font-family: Kumbh Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0px;
+  margin-bottom: 56px;
+}
+
+.cards .card__features {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+  opacity: 0.75;
+}
+
+.cards .card__features--is-blue {
+  color: #fff;
+}
+
+.cards .button {
+  display: inline-block;
+  padding: 14px 41px;
+  background: rgba(81, 117, 255, 0.15266);
+  border-radius: 28px;
+  font-family: Kumbh Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: #5175FF;
+  text-decoration: none;
+}
+
+.cards .button--is-white {
+  background-color: #fff;
+  color: #5175FF;
+}
+
+footer {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #25293A;
+  text-align: center;
+}
+
+footer::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: #25293A;
+  background-image: url("../images/bg-pattern-footer.svg");
+  background-repeat: no-repeat;
+  background-position: center 156px;
+  background-size: 1202px 1202px;
+  left: 0;
+  top: -894px;
+  z-index: -1;
+  height: 895px;
+}
+
+footer .counter__title {
+  font-family: Kumbh Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: white;
+}
+
+footer .counter__title span {
+  color: #829CFF;
+}
+
+footer .counter__countdown {
+  margin: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+}
+
+footer .counter__countdown .counter__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  padding: 10px 0px;
+  background: #333950;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+footer .counter__countdown .counter__number {
+  font-family: Kumbh Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  color: white;
+  margin-bottom: -6px;
+}
+
+footer .counter__countdown .counter__time-unit {
+  font-family: Kumbh Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+}
+
+footer .button {
+  display: inline-block;
+  padding: 14px 41px;
+  background: #5175FF;
+  border-radius: 28px;
+  font-family: Kumbh Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
