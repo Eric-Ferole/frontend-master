@@ -19,29 +19,42 @@
     </div>
     </div>
   </header>
-  <footer>
+  <section class="counter">
     <div class="counter__title counter__title--is-dark">Coming <span>4 Nov 2020</span></div>
     <div class="counter__countdown">
-      <div class="counter__container">
-        <div class="counter__number" id="days">47</div>
-        <div class="counter__time-unit">days</div>
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="days">47</div>
+        <div class="counter__time-unit counter__time-unit--is-grey">days</div>
       </div>
-      <div class="counter__container">
-        <div class="counter__number" id="hours">7</div>
-        <div class="counter__time-unit">hours</div>
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="hours">7</div>
+        <div class="counter__time-unit counter__time-unit--is-grey">hours</div>
       </div>
-      <div class="counter__container">
-        <div class="counter__number" id="minutes">39</div>
-        <div class="counter__time-unit">min</div>
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="minutes">39</div>
+        <div class="counter__time-unit counter__time-unit--is-grey">min</div>
       </div>
-      <div class="counter__container">
-        <div class="counter__number" id="seconds">42</div>
-        <div class="counter__time-unit">sec</div>
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="seconds">42</div>
+        <div class="counter__time-unit counter__time-unit--is-grey  ">sec</div>
       </div>
     </div>
-  </footer>
+  </section>
   <div class="form">
-
+    <form action="post" class="theform">
+      <input type="text" value="Name" onfocus="if(this.value == 'Name') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Name'; }">
+      <input type="text" value="Email Address" onfocus="if(this.value == 'Email Address') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Email Address'; }">
+      <select id="Packs" name="Packs" class="selection">
+        <option value="volvo">Basic Pack <span>free</span></option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select>
+      <input type="text" value="Phone number" onfocus="if(this.value == 'Phone number') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Phone number'; }">
+      <input type="text" value="Company" onfocus="if(this.value == 'Company') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Company'; }">
+      <input type="submit" value="Submit" class="button">
+    </form>
   </div>
   <div class="footer-background footer-background--is-signup">
   </div>
