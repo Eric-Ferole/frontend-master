@@ -109,6 +109,13 @@ header .header__content .button {
   text-decoration: none;
   -webkit-box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
           box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .header__content .button:hover {
+  background-color: #829CFF;
+  color: white;
 }
 
 .cards {
@@ -200,6 +207,8 @@ header .header__content .button {
   line-height: 1.75rem;
   color: #5175FF;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .cards .button--is-white {
@@ -207,7 +216,11 @@ header .header__content .button {
   color: #5175FF;
 }
 
-footer {
+.cards .button:hover {
+  color: #829CFF;
+}
+
+.counter {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -215,7 +228,7 @@ footer {
   text-align: center;
 }
 
-footer .counter__title {
+.counter .counter__title {
   font-family: Kumbh Sans;
   font-size: 1rem;
   font-style: normal;
@@ -227,15 +240,15 @@ footer .counter__title {
   color: white;
 }
 
-footer .counter__title--is-dark {
+.counter .counter__title--is-dark {
   color: #25293A;
 }
 
-footer .counter__title span {
-  color: #829CFF;
+.counter .counter__title span {
+  color: #5175FF;
 }
 
-footer .counter__countdown {
+.counter .counter__countdown {
   margin: 0 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -243,7 +256,7 @@ footer .counter__countdown {
   gap: 13px;
 }
 
-footer .counter__countdown .counter__container {
+.counter .counter__countdown .counter__container {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
@@ -253,7 +266,11 @@ footer .counter__countdown .counter__container {
   margin-bottom: 40px;
 }
 
-footer .counter__countdown .counter__number {
+.counter .counter__countdown .counter__container--is-pale {
+  background-color: rgba(81, 117, 255, 0.1);
+}
+
+.counter .counter__countdown .counter__number {
   font-family: Kumbh Sans;
   font-size: 32px;
   font-style: normal;
@@ -263,7 +280,11 @@ footer .counter__countdown .counter__number {
   margin-bottom: -6px;
 }
 
-footer .counter__countdown .counter__time-unit {
+.counter .counter__countdown .counter__number--is-pale {
+  color: #5175FF;
+}
+
+.counter .counter__countdown .counter__time-unit {
   font-family: Kumbh Sans;
   font-size: 12px;
   font-style: normal;
@@ -275,7 +296,11 @@ footer .counter__countdown .counter__time-unit {
   opacity: 0.5;
 }
 
-footer .button {
+.counter .counter__countdown .counter__time-unit--is-grey {
+  color: #333950;
+}
+
+.counter .button {
   display: inline-block;
   padding: 14px 41px;
   background: #5175FF;
@@ -288,14 +313,72 @@ footer .button {
   color: #fff;
   text-decoration: none;
   margin-bottom: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.counter .button:hover {
+  background-color: #829CFF;
+  color: white;
 }
 
 .form {
   margin: 24px 24px 87px 24px;
+  padding: 24px;
   background-color: #fff;
-  height: 465px;
   border-radius: 13px;
   margin-bottom: 87px;
+}
+
+.form .theform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.form .theform .selection {
+  font-weight: bold;
+  color: #333950;
+}
+
+.form .theform > * {
+  outline: none;
+  height: 45px;
+  border: none;
+  border-bottom: rgba(116, 123, 149, 0.5) 1px solid;
+  color: rgba(116, 123, 149, 0.5);
+  padding-bottom: 17px;
+}
+
+.form .theform .button {
+  -webkit-box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+          box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  display: inline-block;
+  background: #5175FF;
+  border-radius: 28px;
+  color: #fff;
+  font-family: Kumbh Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  line-height: 1.75rem;
+  margin-top: 16px;
+  padding: 14px 41px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form .theform .button:hover {
+  background-color: #829CFF;
+  color: white;
 }
 
 .footer-background {
@@ -303,12 +386,11 @@ footer .button {
   width: 100%;
   background-color: #25293A;
   background-image: url("../images/bg-pattern-footer.svg");
-  background-position: center 750px;
+  background-position: center 68px;
   background-size: 1202px 1202px;
+  background-repeat: no-repeat;
   height: 1248px;
   z-index: -1;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
   bottom: -87px;
 }
 

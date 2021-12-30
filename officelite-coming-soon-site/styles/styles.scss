@@ -109,6 +109,11 @@ header {
     color: #fff;
     text-decoration: none;
     box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+    transition: 0.3s;
+    &:hover {
+      background-color: $secondary;
+      color: white;
+    }
   }
 }
 }
@@ -186,14 +191,18 @@ header {
       line-height: 1.75rem;
       color: $primary;
       text-decoration: none;
+      transition: 0.3s;
       &--is-white {
         background-color: #fff;
         color: $primary;
       }
+      &:hover {
+        color: $secondary;
+      }  
     }
 }
 
-footer {
+.counter {
   // position: relative;
   flex-direction: column;
   text-align: center;
@@ -211,7 +220,7 @@ footer {
       color: #25293A;
     }
     span {
-      color: $secondary;
+      color: #5175FF;
     }
   }
   .counter__countdown {
@@ -224,6 +233,9 @@ footer {
       background: #333950;
       border-radius: 4px;
       margin-bottom: 40px;
+      &--is-pale {
+        background-color: rgba(81, 117, 255, 0.1);
+      }
     }
     .counter__number {
       font-family: Kumbh Sans;
@@ -233,6 +245,9 @@ footer {
       line-height: 48px;
       color: white;
       margin-bottom: -6px;
+      &--is-pale {
+        color: #5175FF
+      }
     }
     .counter__time-unit {
       font-family: Kumbh Sans;
@@ -244,6 +259,9 @@ footer {
       text-align: center;
       color: white;
       opacity: 0.5;
+      &--is-grey {
+        color: rgba(51, 57, 80, 1);
+      }
     }
   }
   .button {
@@ -259,26 +277,74 @@ footer {
     color: #fff;
     text-decoration: none;
     margin-bottom: 100px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $secondary;
+      color: white;
+    }
   }
 }
 
 .form {
   margin: 24px 24px 87px 24px;
+  padding: 24px;
   background-color: #fff;
-  height: 465px;
+  // height: 465px;
   border-radius: 13px;
   margin-bottom: 87px;
+  .theform {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    .selection {
+      font-weight: bold;
+      color: #333950;
+    }
+    > * {
+      outline: none;
+      height: 45px;
+      border: none;
+      border-bottom: rgba(116, 123, 149, 0.5) 1px solid;
+      color: rgba(116, 123, 149, 0.5);
+      padding-bottom: 17px;
+    }
+    .button {
+      box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+      display: inline-block;
+      background: $primary;
+      border-radius: 28px;
+      color: #fff;
+      font-family: Kumbh Sans;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      height: auto;
+      line-height: 1.75rem;
+      margin-top: 16px;
+      padding: 14px 41px;
+      text-decoration: none;
+      transition: 0.3s;
+      &:hover {
+        background-color: $secondary;
+        color: white;
+      }
+    }
+  
+    // background-color: yellow;
+  }
 }
 .footer-background {
   position: absolute;
   width: 100%;
   background-color: #25293A;
   background-image: url("../images/bg-pattern-footer.svg");
-  background-position: center 750px;
+  background-position: center 68px;
   background-size: 1202px 1202px;
+  background-repeat: no-repeat;
   height: 1248px;
   z-index: -1;
-  transform: rotate(180deg);
+  // transform: rotate(180deg);
   bottom: -87px;
   &--is-signup {
     height: 320px;
