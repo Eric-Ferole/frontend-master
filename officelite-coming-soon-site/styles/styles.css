@@ -342,9 +342,16 @@ header .header__content .button:hover {
   height: 100%;
 }
 
-.form .theform .selection {
+.form .theform select {
   font-weight: bold;
   color: #333950;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("../images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 11px;
 }
 
 .form .theform > * {
@@ -354,6 +361,7 @@ header .header__content .button:hover {
   border-bottom: rgba(116, 123, 149, 0.5) 1px solid;
   color: rgba(116, 123, 149, 0.5);
   padding-bottom: 17px;
+  padding-left: 16px;
 }
 
 .form .theform .button {
@@ -396,5 +404,69 @@ header .header__content .button:hover {
 
 .footer-background--is-signup {
   height: 320px;
+}
+
+@media only screen and (min-width: 768px) {
+  header .header__logo {
+    margin-left: 40px;
+    margin-right: 40px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .header__hero {
+    margin: 0 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 140px;
+  }
+  header .header__hero .header__content {
+    padding-right: 64px;
+    text-align: left;
+    margin: 0;
+  }
+  header .header__hero .header__image {
+    margin-bottom: 0;
+  }
+  header .header__hero .header__image img {
+    width: 281px;
+  }
+  .cards .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 48px;
+  }
+  .cards .card > * {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .cards .card .card__header {
+    text-align: left;
+  }
+  .cards .card .card__header h2 {
+    margin-bottom: 16px;
+  }
+  .cards .card .card__features {
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards .card .button {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
