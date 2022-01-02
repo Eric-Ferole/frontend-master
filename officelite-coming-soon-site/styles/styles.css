@@ -12,6 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.signup {
+  background-image: none;
+}
+
 img, picture, video, canvas, svg {
   display: block;
 }
@@ -39,7 +43,6 @@ body {
 }
 
 header .header__logo {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,6 +413,7 @@ header .header__content .button:hover {
   header .header__logo {
     margin-left: 40px;
     margin-right: 40px;
+    margin-top: 72px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -428,9 +432,19 @@ header .header__content .button:hover {
             justify-content: flex-start;
     margin-bottom: 140px;
   }
+  header .header__hero--is-signup {
+    margin: 0 98px 40px 98px;
+  }
   header .header__hero .header__content {
     padding-right: 64px;
     text-align: left;
+    margin: 0;
+  }
+  header .header__hero .header__content--is-signup {
+    text-align: center;
+    padding: 0;
+  }
+  header .header__hero .header__content .header__description {
     margin: 0;
   }
   header .header__hero .header__image {
@@ -447,6 +461,9 @@ header .header__content .button:hover {
         flex-wrap: wrap;
     padding: 48px;
   }
+  .cards .card--is-blue {
+    background-position: -320px center;
+  }
   .cards .card > * {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -457,16 +474,73 @@ header .header__content .button:hover {
   .cards .card .card__header h2 {
     margin-bottom: 16px;
   }
+  .cards .card .card__header .card__price {
+    margin-bottom: 4px;
+  }
+  .cards .card .card__header .card__description {
+    margin-bottom: 24px;
+  }
   .cards .card .card__features {
     text-align: left;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 0;
+  }
+  .cards .card .button {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .counter {
+    width: 448px;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+  .counter--is-signup {
+    margin-bottom: 104px;
+  }
+  .counter .counter__countdown {
+    margin: 0 0 40px 0;
+  }
+  .counter .counter__countdown > * {
+    height: 128px;
+  }
+  .counter .counter__countdown .counter__container {
+    padding: 0;
+    border-radius: 13px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
-  .cards .card .button {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+  .counter .counter__countdown * > .counter__number {
+    font-size: 56px;
+    margin-bottom: 2.5px;
+  }
+  .counter .counter__countdown .counter__time-unit {
+    font-size: 16px;
+  }
+  .footer-background {
+    background-position: center 189px;
+    background-size: 1454px 1454px;
+  }
+  .footer-background--is-signup {
+    bottom: -126px;
+    background-position: center -539px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .form {
+    margin: 24px 160px 126px 160px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
