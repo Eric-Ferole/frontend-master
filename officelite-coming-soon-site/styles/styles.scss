@@ -363,6 +363,10 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    background-position: 450px -200px;
+    background-size: 666px 666px;
+  }
   header {
     .header__logo {
       margin-left: 40px;
@@ -388,7 +392,10 @@ header {
          padding: 0;
        }
        .header__description {
-         margin: 0;
+         margin: 0 0 24px 0;
+         &--is-signup {
+           margin-bottom: 0;
+         }
        }
       }
       .header__image {
@@ -463,12 +470,14 @@ header {
     }
   }
   .footer-background {
+    height: 1058px;
     background-position: center 189px;
     background-size: 1454px 1454px;
     &--is-signup {
       bottom: -126px;
       background-position: center -539px;
       transform: rotate(180deg);
+      height: 380px;
     }
   }
   .form {
