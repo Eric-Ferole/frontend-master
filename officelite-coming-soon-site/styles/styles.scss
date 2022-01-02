@@ -482,5 +482,104 @@ header {
   }
   .form {
     margin: 24px 160px 126px 160px;
+    padding: 40px 42px 51px 43px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-position: 450px -200px;
+    background-size: 666px 666px;
+  }
+  header {
+    .header__logo {
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 72px;
+      justify-content: flex-start;
+    }
+    .header__hero {
+      margin: 0 40px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      margin-bottom: 140px;
+      &--is-signup {
+        margin: 0 98px 40px 98px;
+      }
+      .header__content {
+        padding-right: 64px;
+       text-align: left;
+       margin: 0;
+       &--is-signup {
+         text-align: center;
+         padding: 0;
+       }
+       .header__description {
+         margin: 0 0 24px 0;
+         &--is-signup {
+           margin-bottom: 0;
+         }
+       }
+      }
+      .header__image {
+        margin-bottom: 0;
+      }
+      .header__image img {
+        width: 281px;
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    .card {
+      max-width: 350px;
+    }
+  }
+  .counter {
+    width: 448px;
+    margin: auto;
+    margin-bottom: 48px;
+    &--is-signup {
+      margin-bottom: 104px;
+    }
+    .counter__countdown {
+      margin: 0 0 40px 0;
+      > * {
+        height: 128px;
+      }
+      .counter__container {
+        padding: 0;
+        border-radius: 13px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+      }
+      * > .counter__number {
+        font-size: 56px;
+        margin-bottom: 2.5px;
+      }
+      .counter__time-unit {
+        font-size: 16px;
+      }
+    }
+  }
+  .footer-background {
+    height: 1058px;
+    background-position: center 189px;
+    background-size: 1454px 1454px;
+    &--is-signup {
+      bottom: -126px;
+      background-position: center -539px;
+      transform: rotate(180deg);
+      height: 380px;
+    }
+  }
+  .form {
+    margin: 24px 160px 126px 160px;
+    padding: 40px 42px 51px 43px;
   }
 }

@@ -550,6 +550,126 @@ header .header__content .button:hover {
   }
   .form {
     margin: 24px 160px 126px 160px;
+    padding: 40px 42px 51px 43px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-position: 450px -200px;
+    background-size: 666px 666px;
+  }
+  header .header__logo {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 72px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  header .header__hero {
+    margin: 0 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 140px;
+  }
+  header .header__hero--is-signup {
+    margin: 0 98px 40px 98px;
+  }
+  header .header__hero .header__content {
+    padding-right: 64px;
+    text-align: left;
+    margin: 0;
+  }
+  header .header__hero .header__content--is-signup {
+    text-align: center;
+    padding: 0;
+  }
+  header .header__hero .header__content .header__description {
+    margin: 0 0 24px 0;
+  }
+  header .header__hero .header__content .header__description--is-signup {
+    margin-bottom: 0;
+  }
+  header .header__hero .header__image {
+    margin-bottom: 0;
+  }
+  header .header__hero .header__image img {
+    width: 281px;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cards .card {
+    max-width: 350px;
+  }
+  .counter {
+    width: 448px;
+    margin: auto;
+    margin-bottom: 48px;
+  }
+  .counter--is-signup {
+    margin-bottom: 104px;
+  }
+  .counter .counter__countdown {
+    margin: 0 0 40px 0;
+  }
+  .counter .counter__countdown > * {
+    height: 128px;
+  }
+  .counter .counter__countdown .counter__container {
+    padding: 0;
+    border-radius: 13px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .counter .counter__countdown * > .counter__number {
+    font-size: 56px;
+    margin-bottom: 2.5px;
+  }
+  .counter .counter__countdown .counter__time-unit {
+    font-size: 16px;
+  }
+  .footer-background {
+    height: 1058px;
+    background-position: center 189px;
+    background-size: 1454px 1454px;
+  }
+  .footer-background--is-signup {
+    bottom: -126px;
+    background-position: center -539px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    height: 380px;
+  }
+  .form {
+    margin: 24px 160px 126px 160px;
+    padding: 40px 42px 51px 43px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
