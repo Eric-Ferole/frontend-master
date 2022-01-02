@@ -410,6 +410,10 @@ header .header__content .button:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  body {
+    background-position: 450px -200px;
+    background-size: 666px 666px;
+  }
   header .header__logo {
     margin-left: 40px;
     margin-right: 40px;
@@ -445,7 +449,10 @@ header .header__content .button:hover {
     padding: 0;
   }
   header .header__hero .header__content .header__description {
-    margin: 0;
+    margin: 0 0 24px 0;
+  }
+  header .header__hero .header__content .header__description--is-signup {
+    margin-bottom: 0;
   }
   header .header__hero .header__image {
     margin-bottom: 0;
@@ -530,6 +537,7 @@ header .header__content .button:hover {
     font-size: 16px;
   }
   .footer-background {
+    height: 1058px;
     background-position: center 189px;
     background-size: 1454px 1454px;
   }
@@ -538,9 +546,35 @@ header .header__content .button:hover {
     background-position: center -539px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+    height: 380px;
   }
   .form {
     margin: 24px 160px 126px 160px;
+    padding: 40px 42px 51px 43px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-position: 450px -200px;
+    background-size: 666px 666px;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .cards .card {
+    text-align: center;
+    max-width: 350px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
