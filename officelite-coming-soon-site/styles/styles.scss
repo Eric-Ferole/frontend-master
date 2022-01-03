@@ -440,6 +440,7 @@ header {
     }
   }
   .counter {
+    // flex-wrap: nowrap;
     width: 448px;
     margin: auto;
     margin-bottom: 48px;
@@ -490,15 +491,76 @@ header {
   body {
     background-position: 450px -200px;
     background-size: 666px 666px;
-  }  
-  .cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    .card {
-      text-align: center;
-      max-width: 350px;
+    header {
+      .header__hero {
+        justify-content: center;
+        .header__image img  {
+        width: 475px;
+        }
+      .header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 540px;
+        h1 {
+          font-size: 56px;
+          line-height: 64px;  
+        }
+        .header__description {
+          font-size: 18px;
+          line-height: 28px;
+        }
+        .button {
+          flex-basis: auto;
+        }
+      }
+    }
+  }
+    
+    .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 30px;
+      margin: 0 0 82px 0;
+      .card {
+        flex-wrap: nowrap;
+        align-items: center;
+        min-width: 350px;
+        flex-direction: column;
+        .card__header {
+          margin-bottom: 56px;
+        }
+        .card__features {
+          margin-bottom: 32px;
+        }
+      }
+      * {
+        text-align: center;
+      }
+    }
+    .counter {
+      position: relative;
+      width: 1110px;
+      justify-content: flex-start;
+      margin-bottom: 91px;
+      .counter__title {
+        text-align: left;
+      }
+      .counter__countdown {
+        margin-bottom: 0;
+        .counter__container {
+          width: 100px;
+          flex: none;
+        }
+      }
+      .button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-bottom: 0;
+      }
     }
   }
 }

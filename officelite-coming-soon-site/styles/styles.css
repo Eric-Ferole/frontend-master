@@ -559,7 +559,43 @@ header .header__content .button:hover {
     background-position: 450px -200px;
     background-size: 666px 666px;
   }
-  .cards {
+  body header .header__hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header .header__hero .header__image img {
+    width: 475px;
+  }
+  body header .header__hero .header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 540px;
+  }
+  body header .header__hero .header__content h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  body header .header__hero .header__content .header__description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  body header .header__hero .header__content .button {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  body .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -571,10 +607,54 @@ header .header__content .button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
+    margin: 0 0 82px 0;
   }
-  .cards .card {
+  body .cards .card {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 350px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .cards .card .card__header {
+    margin-bottom: 56px;
+  }
+  body .cards .card .card__features {
+    margin-bottom: 32px;
+  }
+  body .cards * {
     text-align: center;
-    max-width: 350px;
+  }
+  body .counter {
+    position: relative;
+    width: 1110px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 91px;
+  }
+  body .counter .counter__title {
+    text-align: left;
+  }
+  body .counter .counter__countdown {
+    margin-bottom: 0;
+  }
+  body .counter .counter__countdown .counter__container {
+    width: 100px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  body .counter .button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
