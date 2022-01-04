@@ -575,6 +575,13 @@ header .header__content .button:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  body header .header__hero--is-signup {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
   body header .header__hero .header__image img {
     width: 475px;
   }
@@ -594,6 +601,9 @@ header .header__content .button:hover {
             align-items: flex-start;
     width: 540px;
     padding-right: 0;
+  }
+  body header .header__hero .header__content--is-signup h1 {
+    text-align: left;
   }
   body header .header__hero .header__content h1 {
     font-size: 56px;
