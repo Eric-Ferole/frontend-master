@@ -139,6 +139,8 @@ header .header__content .button:hover {
   color: #333950;
   background-color: #fff;
   border-radius: 13px;
+  -webkit-box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+          box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
 }
 
 .cards .card--is-blue {
@@ -556,10 +558,57 @@ header .header__content .button:hover {
 
 @media only screen and (min-width: 1440px) {
   body {
-    background-position: 450px -200px;
-    background-size: 666px 666px;
+    background-position: 656px -419px;
+    background-size: 1134px 1134px;
   }
-  .cards {
+  body header {
+    margin: 81px auto 112px auto;
+    width: 1110px;
+  }
+  body header .header__logo {
+    margin: 0;
+    margin-bottom: 102px;
+  }
+  body header .header__hero {
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header .header__hero .header__image img {
+    width: 475px;
+  }
+  body header .header__hero .header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 540px;
+    padding-right: 0;
+  }
+  body header .header__hero .header__content h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  body header .header__hero .header__content .header__description {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+  body header .header__hero .header__content .button {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  body .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -571,10 +620,74 @@ header .header__content .button:hover {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 30px;
+    margin: 0 0 82px 0;
   }
-  .cards .card {
+  body .cards .card {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 350px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px;
+  }
+  body .cards .card--is-blue {
+    background-position: center -391px;
+  }
+  body .cards .card .card__header {
+    margin-bottom: 56px;
+  }
+  body .cards .card .card__header h2 {
+    margin-bottom: 40px;
+  }
+  body .cards .card .card__header .card__price {
+    margin-bottom: 8px;
+  }
+  body .cards .card .card__header .card__description {
+    margin-bottom: 0;
+  }
+  body .cards .card .card__features {
+    margin-bottom: 32px;
+  }
+  body .cards * {
     text-align: center;
-    max-width: 350px;
+  }
+  body .counter {
+    position: relative;
+    margin-bottom: 0;
+    width: 1110px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-bottom: 91px;
+  }
+  body .counter .counter__title {
+    text-align: left;
+  }
+  body .counter .counter__countdown {
+    margin-bottom: 0;
+  }
+  body .counter .counter__countdown .counter__container {
+    width: 100px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  body .counter .button {
+    position: absolute;
+    top: 78px;
+    right: 0;
+    margin-bottom: 0;
+  }
+  .footer-background {
+    bottom: 0;
+    height: 603px;
+    background-size: 2036px 2036px;
+    background-position: -707px -601px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
