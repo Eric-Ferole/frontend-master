@@ -223,6 +223,7 @@ header {
     color: white;
     &--is-dark {
       color: #25293A;
+      margin-bottom: 8px;
     }
     span {
       color: #5175FF;
@@ -490,11 +491,18 @@ header {
     background-position: 656px -419px;
     background-size: 1134px 1134px;
     header {
-      margin: 81px auto 112px auto;
+      margin: 0 auto 112px auto;
+      padding-top: 81px;
       width: 1110px;
+      &.signup {
+        margin-bottom: 40px;
+      }
       .header__logo {
         margin: 0;
         margin-bottom: 102px;
+        &--is-signup {
+          margin-bottom: 154px;
+        }
       }
       .header__hero {
         margin: 0;
@@ -504,7 +512,7 @@ header {
           text-align: left;
         }
         .header__image img  {
-          width: 475px;
+          width: 500px;
         }
       .header__content {
         display: flex;
@@ -516,6 +524,7 @@ header {
         &--is-signup {
           h1 {
             text-align: left;
+            margin-bottom: 24px;
           }
         }
         h1 {
@@ -526,14 +535,18 @@ header {
           font-size: 18px;
           line-height: 28px;
           margin-bottom: 32px;
+          &--is-signup {
+            margin: 0;
+            text-align: left;
+          }
         }
         .button {
           flex-basis: auto;
+          margin-bottom: 75px;
         }
       }
     }
   }
-    
     .cards {
       display: flex;
       flex-direction: row;
@@ -592,11 +605,28 @@ header {
         margin-bottom: 0;
       }
     }
-  }
-  .footer-background {
-    bottom: 0;
-    height: 603px;
-    background-size: 2036px 2036px;
-    background-position: -707px -601px;
+    .footer-background {
+      bottom: 0;
+      height: 603px;
+      background-size: 2036px 2036px;
+      background-position: -707px -601px;
+      &--is-signup {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 420px;
+        height: 100vh;
+        background-position: -852px -279px;
+      }
+    }
+    .form {
+      margin: 0;
+      position: absolute;
+      width: 445px;
+      height: 508px;
+      left: calc(100% - 610px);
+      top: 237px;
+      box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    }
   }
 }
