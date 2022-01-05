@@ -247,6 +247,7 @@ header .header__content .button:hover {
 
 .counter .counter__title--is-dark {
   color: #25293A;
+  margin-bottom: 8px;
 }
 
 .counter .counter__title span {
@@ -562,12 +563,19 @@ header .header__content .button:hover {
     background-size: 1134px 1134px;
   }
   body header {
-    margin: 81px auto 112px auto;
+    margin: 0 auto 112px auto;
+    padding-top: 81px;
     width: 1110px;
+  }
+  body header.signup {
+    margin-bottom: 40px;
   }
   body header .header__logo {
     margin: 0;
     margin-bottom: 102px;
+  }
+  body header .header__logo--is-signup {
+    margin-bottom: 154px;
   }
   body header .header__hero {
     margin: 0;
@@ -575,8 +583,15 @@ header .header__content .button:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  body header .header__hero--is-signup {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
   body header .header__hero .header__image img {
-    width: 475px;
+    width: 500px;
   }
   body header .header__hero .header__content {
     display: -webkit-box;
@@ -595,6 +610,10 @@ header .header__content .button:hover {
     width: 540px;
     padding-right: 0;
   }
+  body header .header__hero .header__content--is-signup h1 {
+    text-align: left;
+    margin-bottom: 24px;
+  }
   body header .header__hero .header__content h1 {
     font-size: 56px;
     line-height: 64px;
@@ -604,9 +623,14 @@ header .header__content .button:hover {
     line-height: 28px;
     margin-bottom: 32px;
   }
+  body header .header__hero .header__content .header__description--is-signup {
+    margin: 0;
+    text-align: left;
+  }
   body header .header__hero .header__content .button {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+    margin-bottom: 75px;
   }
   body .cards {
     display: -webkit-box;
@@ -683,11 +707,29 @@ header .header__content .button:hover {
     right: 0;
     margin-bottom: 0;
   }
-  .footer-background {
+  body .footer-background {
     bottom: 0;
     height: 603px;
     background-size: 2036px 2036px;
     background-position: -707px -601px;
+  }
+  body .footer-background--is-signup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 420px;
+    height: 100vh;
+    background-position: -852px -279px;
+  }
+  body .form {
+    margin: 0;
+    position: absolute;
+    width: 445px;
+    height: 508px;
+    left: calc(100% - 610px);
+    top: 237px;
+    -webkit-box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+            box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   }
 }
 /*# sourceMappingURL=styles.css.map */
