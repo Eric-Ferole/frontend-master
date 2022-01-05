@@ -208,7 +208,6 @@ header {
 }
 
 .counter {
-  // position: relative;
   flex-direction: column;
   text-align: center;
   .counter__title {
@@ -295,13 +294,12 @@ header {
   margin: 24px 24px 87px 24px;
   padding: 24px;
   background-color: #fff;
-  // height: 465px;
   border-radius: 13px;
   margin-bottom: 87px;
   .theform {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    // gap: 24px;
     height: 100%;
     select {
       font-weight: bold;
@@ -311,9 +309,9 @@ header {
       background-repeat: no-repeat;
       background-position-x: 95%;
       background-position-y: 11px;
-    
     }
-    > * {
+    .input {
+      margin-bottom: 24px;
       outline: none;
       height: 45px;
       border: none;
@@ -323,6 +321,7 @@ header {
       padding-left: 16px;
     }
     .button {
+      border: 0;
       box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
       display: inline-block;
       background: $primary;
@@ -343,7 +342,49 @@ header {
         color: white;
       }
     }
+  }
+
+  .hidden {
+    display: none;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 32px; 
+    right: 5px;
+    pointer-events: none;
+    z-index: 2;
+    
+    &.icon-success {
+      fill: green;
     }
+    
+    &.icon-error {
+      fill: red;
+    }
+  }
+    &.input-error {
+      border: 1px solid red;
+      &:focus {
+        border: 1px solid red;
+      }
+    &:focus {
+      outline: none;
+      border: 1px solid #a0aec0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      background-clip: padding-box;
+    }
+  }
+  .input-group {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .error-message {
+    font-size: .85rem;
+    color: red;
+  }
 }
 .footer-background {
   position: absolute;
@@ -623,7 +664,7 @@ header {
       margin: 0;
       position: absolute;
       width: 445px;
-      height: 508px;
+      // height: 508px;
       left: calc(100% - 610px);
       top: 237px;
       box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
