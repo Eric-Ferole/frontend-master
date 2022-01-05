@@ -6,7 +6,7 @@ class FormValidator {
   
   initialize() {
     this.validateOnEntry()
-    this.validateOnSubmit()
+    // this.validateOnSubmit()
   }
   
   validateOnSubmit() {
@@ -25,7 +25,7 @@ class FormValidator {
     let self = this
     this.fields.forEach(field => {
       const input = document.querySelector(`#${field}`)
-      
+      console.log(fields)
       input.addEventListener('input', event => {
         self.validateFields(input)
       })
@@ -88,7 +88,7 @@ class FormValidator {
 
 const form = document.querySelector('.theform')
 console.log(form)
-const fields = ["username", "email", "packs", "phone", "company"]
+const fields = ["name", "email", "packs", "phone", "company"]
 
 const validator = new FormValidator(form, fields)
 validator.initialize()
