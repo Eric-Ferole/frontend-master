@@ -6,7 +6,7 @@ class FormValidator {
   
   initialize() {
     this.validateOnEntry()
-    // this.validateOnSubmit()
+    this.validateOnSubmit()
   }
   
   validateOnSubmit() {
@@ -16,6 +16,7 @@ class FormValidator {
 	    e.preventDefault()
 	    self.fields.forEach(field => {
         const input = document.querySelector(`#${field}`)
+        // console.log(input)
         self.validateFields(input)
       })
     })
@@ -52,17 +53,17 @@ class FormValidator {
     }
     
     // Password confirmation edge case
-    if (field.id === "password_confirmation") { 
-      const passwordField = this.form.querySelector('#password')
+    // if (field.id === "password_confirmation") { 
+    //   const passwordField = this.form.querySelector('#password')
     
-      if (field.value.trim() == "") {
-        this.setStatus(field, "Password confirmation required", "error")
-      } else if (field.value != passwordField.value)  {
-        this.setStatus(field, "Password does not match", "error")
-      } else {
-        this.setStatus(field, null, "success")
-      }
-    }
+    //   if (field.value.trim() == "") {
+    //     this.setStatus(field, "Password confirmation required", "error")
+    //   } else if (field.value != passwordField.value)  {
+    //     this.setStatus(field, "Password does not match", "error")
+    //   } else {
+    //     this.setStatus(field, null, "success")
+    //   }
+    // }
   }
 
   setStatus(field, message, status) {
@@ -87,8 +88,8 @@ class FormValidator {
 }
 
 const form = document.querySelector('.theform')
-console.log(form)
-const fields = ["name", "email", "packs", "phone", "company"]
+// console.log(form)
+const fields = ["name", "email", "phone", "company"]
 
 const validator = new FormValidator(form, fields)
 validator.initialize()
