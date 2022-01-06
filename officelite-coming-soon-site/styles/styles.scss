@@ -303,26 +303,72 @@ header {
     flex-direction: column;
     gap: 24px;
     height: 100%;
-    select {
-      font-weight: bold;
-      color: #333950;
-      appearance: none;
-      background-image: url("../images/icon-arrow-down.svg");
-      background-repeat: no-repeat;
-      background-position-x: 95%;
-      background-position-y: 11px;
-    
-    }
-    > * {
-      outline: none;
-      height: 45px;
-      border: none;
+    .form-control {
+      position: relative;
       border-bottom: rgba(116, 123, 149, 0.5) 1px solid;
-      color: rgba(116, 123, 149, 0.5);
-      padding-bottom: 17px;
-      padding-left: 16px;
+      // color: rgba(116, 123, 149, 0.5);
+      // padding-bottom: 17px;
+      // padding-left: 16px;
+      &.success {
+        i.bi-check-circle-fill {
+          visibility: visible;
+          color: #2ecc71;
+        }
+      }
+      &.error {
+        border-color: #F05B5B;
+        input {
+          color: #F05B5B;
+        }
+        i.bi-exclamation-circle-fill {
+          visibility: visible;
+          color: #F05B5B;
+        }
+        small {
+          visibility: visible;
+          color: #F05B5B;
+          font-weight: bold;
+        }
+      }
+      input {
+        color: rgba(116, 123, 149, 0.5);
+        display: block;
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 45px;
+      }
+      select {
+        height: 45px;
+        width: 100%;
+        display: block;
+        outline: none;
+        border: none;
+        font-weight: bold;
+        color: #333950;
+        appearance: none;
+        background-color: #fff;
+        background-image: url("../images/icon-arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: 11px;
+      }
+      i {
+        position: absolute;
+        top: 13px;
+        right: 20px;
+        visibility: hidden;
+      }
+      small {
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        visibility: hidden;
+      }
     }
     .button {
+      outline: none;
+      border: none;
       box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
       display: inline-block;
       background: $primary;
@@ -343,7 +389,7 @@ header {
         color: white;
       }
     }
-    }
+  }
 }
 .footer-background {
   position: absolute;
@@ -623,7 +669,7 @@ header {
       margin: 0;
       position: absolute;
       width: 445px;
-      height: 508px;
+      // height: 508px;
       left: calc(100% - 610px);
       top: 237px;
       box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);

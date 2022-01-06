@@ -348,29 +348,79 @@ header .header__content .button:hover {
   height: 100%;
 }
 
-.form .theform select {
+.form .theform .form-control {
+  position: relative;
+  border-bottom: rgba(116, 123, 149, 0.5) 1px solid;
+}
+
+.form .theform .form-control.success i.bi-check-circle-fill {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form .theform .form-control.error {
+  border-color: #F05B5B;
+}
+
+.form .theform .form-control.error input {
+  color: #F05B5B;
+}
+
+.form .theform .form-control.error i.bi-exclamation-circle-fill {
+  visibility: visible;
+  color: #F05B5B;
+}
+
+.form .theform .form-control.error small {
+  visibility: visible;
+  color: #F05B5B;
+  font-weight: bold;
+}
+
+.form .theform .form-control input {
+  color: rgba(116, 123, 149, 0.5);
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 45px;
+}
+
+.form .theform .form-control select {
+  height: 45px;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: none;
   font-weight: bold;
   color: #333950;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-color: #fff;
   background-image: url("../images/icon-arrow-down.svg");
   background-repeat: no-repeat;
   background-position-x: 95%;
   background-position-y: 11px;
 }
 
-.form .theform > * {
-  outline: none;
-  height: 45px;
-  border: none;
-  border-bottom: rgba(116, 123, 149, 0.5) 1px solid;
-  color: rgba(116, 123, 149, 0.5);
-  padding-bottom: 17px;
-  padding-left: 16px;
+.form .theform .form-control i {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  visibility: hidden;
+}
+
+.form .theform .form-control small {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  visibility: hidden;
 }
 
 .form .theform .button {
+  outline: none;
+  border: none;
   -webkit-box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
           box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
   display: inline-block;
@@ -725,7 +775,6 @@ header .header__content .button:hover {
     margin: 0;
     position: absolute;
     width: 445px;
-    height: 508px;
     left: calc(100% - 610px);
     top: 237px;
     -webkit-box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
