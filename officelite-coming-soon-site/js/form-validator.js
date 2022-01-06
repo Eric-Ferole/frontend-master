@@ -18,13 +18,31 @@ const checkInputs = () => {
   const phoneValue = phone.value.trim();
   const companyValue = company.value.trim();
 
-  if(fullnameValue === '' || 'Name') {
+  if(fullnameValue === '') {
     // show error
     // add error class
     setErrorFor(fullname, 'Name cannot be blank');
   } else {
     // show success class
     setSuccessFor(fullname);
+  }
+  if(emailValue === '') {
+    setErrorFor(email, 'Email address cannot be blank');
+  } else {
+    // show success class
+    setSuccessFor(email);
+  }
+  if(phoneValue === '') {
+    setErrorFor(phone, 'Phone cannot be blank');
+  } else {
+    // show success class
+    setSuccessFor(phone);
+  }
+  if(companyValue === '') {
+    setErrorFor(company, 'Company cannot be blank');
+  } else {
+    // show success class
+    setSuccessFor(company);
   }
 } 
 
@@ -33,7 +51,11 @@ const setErrorFor = (input, message) => {
   const small = formControl.querySelector('small');
   // add error message in small
   small.innerText = message;
-  console.log(message)
   // add error class
   formControl.className = 'form-control error';
+}
+
+const setSuccessFor = input => {
+  const formControl = input.parentElement;
+  formControl.className = 'form-control success';
 }
