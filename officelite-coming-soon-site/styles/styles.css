@@ -362,7 +362,19 @@ header .header__content .button:hover {
   border-color: #F05B5B;
 }
 
-.form .theform .form-control.error input {
+.form .theform .form-control.error::-webkit-input-placeholder {
+  color: #F05B5B;
+}
+
+.form .theform .form-control.error:-ms-input-placeholder {
+  color: #F05B5B;
+}
+
+.form .theform .form-control.error::-ms-input-placeholder {
+  color: #F05B5B;
+}
+
+.form .theform .form-control.error::placeholder {
   color: #F05B5B;
 }
 

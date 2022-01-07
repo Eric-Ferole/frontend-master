@@ -317,7 +317,7 @@ header {
       }
       &.error {
         border-color: #F05B5B;
-        input {
+        &::placeholder {
           color: #F05B5B;
         }
         i.bi-exclamation-circle-fill {
