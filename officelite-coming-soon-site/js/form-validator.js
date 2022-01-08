@@ -10,6 +10,17 @@ form.addEventListener('submit', e => {
   checkInputs();
 });
 
+validateOnEntry = () => {
+  const fields = [fullname, email, phone, company]
+  this.fields.forEach(field => {
+    const input = document.querySelector(`#${field}`)
+    input.addEventListener('input', event => {
+      checkInputs();
+    })
+  })
+}
+
+
 const checkInputs = () => {
   // get the values of the inputs
   const fullnameValue = fullname.value.trim();
