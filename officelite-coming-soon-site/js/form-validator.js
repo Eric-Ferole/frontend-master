@@ -12,7 +12,7 @@ form.addEventListener('submit', e => {
 
 validateOnEntry = () => {
   const fields = [fullname, email, phone, company]
-  this.fields.forEach(field => {
+  fields.forEach(field => {
     const input = document.querySelector(`#${field}`)
     input.addEventListener('input', event => {
       checkInputs();
@@ -20,12 +20,22 @@ validateOnEntry = () => {
   })
 }
 
+// Select toggle
+
+const select = document.querySelector('.select-wrapper');
+const basicPack = document.querySelector('#basic-pack');
+const proPack = document.querySelector('#pro-pack');
+const ultimatePack = document.querySelector('#ultimate-pack');
+
+select.addEventListener('click', () => {
+  document.querySelector('.select__options').classList.toggle('open');
+})
 
 const checkInputs = () => {
   // get the values of the inputs
   const fullnameValue = fullname.value.trim();
   const emailValue = email.value.trim();
-  const packsValue = packs.value.trim();
+  // const packsValue = packs.value.trim();
   const phoneValue = phone.value.trim();
   const companyValue = company.value.trim();
 

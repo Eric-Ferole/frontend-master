@@ -43,26 +43,6 @@
       </div>
     </div>
   </section>
-  <div class="select-wrapper">
-    <div class="select">
-        <div class="select__trigger">Basic Pack <span>Free</span></div>
-        <img src="images/icon-arrow-down.svg" alt="Arrow down icon">
-    </div>
-    <div class="select__options">
-      <div class="select__row">
-          <div class="select__pack">Basic Pack <span>Free</span></div>
-          <img src="images/icon-check.svg" alt="check icon">
-      </div>
-      <div class="select__row">
-          <div class="select__pack">Pro Pack <span>$9.99</span></div>
-          <img src="images/icon-check.svg" alt="check icon">  
-      </div>
-      <div class="select__row">
-          <div class="select__pack">Ultimate Pack <span>$19.99</span></div>
-          <img src="images/icon-check.svg" alt="check icon">  
-      </div>
-    </div>
-  </div>
   <div class="form">
     <form action="post" class="theform" id="form">
       <div class="form-control">
@@ -77,15 +57,25 @@
         <i class="bi bi-exclamation-circle-fill"></i>
         <small>Error message</small>
       </div>
-      <div class="form-control">
-        <select id="packs" name="Packs">
-          <option value="" aria-placeholder="Basic Pack">Basic Pack <span>free</span></option>
-          <option value="" aria-placeholder="volvo">Pro Pack <span>$9.99</span></option>
-          <option value="" aria-placeholder="saab">Ultimate Pack <span>$19.99</span></option>
-        </select>
-        <i class="bi bi-check-circle-fill"></i>
-        <i class="bi bi-exclamation-circle-fill"></i>
-        <small>Error message</small>
+      <div class="select-wrapper">
+        <div class="select">
+            <div class="select__trigger">Basic Pack<span>&nbsp;&nbsp;Free</span></div>
+            <img src="images/icon-arrow-down.svg" alt="Arrow down icon">
+        </div>
+        <div  class="select__options open">
+          <div id="basic-pack" class="select__row">
+              <div  class="select__pack" data-value="Basic Pack">Basic Pack  <span>&nbsp;&nbsp;Free</span></div>
+              <img class="check" src="images/icon-check.svg" alt="check icon">
+          </div>
+          <div id="pro-pack" class="select__row">
+              <div  class="select__pack" data-value="Pro Pack">Pro Pack <span>&nbsp;&nbsp;$9.99</span></div>
+              <img class="check" src="images/icon-check.svg" alt="check icon">  
+          </div>
+          <div id="ultimate-pack" class="select__row">
+              <div  class="select__pack" data-value="Ultimate Pack">Ultimate Pack&nbsp;&nbsp;<span> $19.99</span></div>
+              <img class="check" src="images/icon-check.svg" alt="check icon">  
+          </div>
+        </div>
       </div>
       <div class="form-control">
         <input type="text" id="phone" value="" placeholder="Phone number">
