@@ -34,7 +34,6 @@ body {
 
 img, picture, video, canvas, svg {
   display: block;
-  // max-width: 100%;
 }
 
 input, button, textarea, select {
@@ -61,19 +60,18 @@ body {
 
 header {
   .header__logo {
-    // width: 100%;
     display: flex;
     justify-content: center;
     margin: 46px 0 80px 0;
   }
-.header__image {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 64px;
-  img {
-    width: 171px;
+  .header__image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 64px;
+    img {
+      width: 171px;
+    }
   }
-}
   .header__content {
   text-align: center;
   margin: 0 24px 100px 24px;
@@ -112,14 +110,14 @@ header {
     line-height: 1.75rem;
     color: #fff;
     text-decoration: none;
-    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+    // box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
     transition: 0.3s;
     &:hover {
       background-color: $secondary;
       color: white;
     }
   }
-}
+  }
 }
 
 .cards {
@@ -208,7 +206,6 @@ header {
 }
 
 .counter {
-  // position: relative;
   flex-direction: column;
   text-align: center;
   .counter__title {
@@ -232,7 +229,7 @@ header {
   .counter__countdown {
     margin: 0 24px;
     display: flex;
-    gap: 13px;
+    gap: 16px;
     .counter__container {
       flex: 1 1 0;
       padding: 10px 0px;
@@ -295,7 +292,6 @@ header {
   margin: 24px 24px 87px 24px;
   padding: 24px;
   background-color: #fff;
-  // height: 465px;
   border-radius: 13px;
   margin-bottom: 87px;
   .theform {
@@ -306,9 +302,6 @@ header {
     .form-control {
       position: relative;
       border-bottom: rgba(116, 123, 149, 0.5) 1px solid;
-      // color: rgba(116, 123, 149, 0.5);
-      // padding-bottom: 17px;
-      // padding-left: 16px;
       &.success {
         i.bi-check-circle-fill {
           visibility: visible;
@@ -331,7 +324,6 @@ header {
         }
       }
       input {
-        color: rgba(116, 123, 149, 0.5);
         display: block;
         outline: none;
         border: none;
@@ -339,6 +331,9 @@ header {
         height: 20px;
         margin-bottom: 24px;
         padding: 0 0 0 16px;
+        &::placeholder {
+          color: rgba(116, 123, 149, 0.5);;
+        }
       }
       select {
         height: 45px;
@@ -371,7 +366,7 @@ header {
     .button {
       outline: none;
       border: none;
-      box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+      // box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
       display: inline-block;
       background: $primary;
       border-radius: 28px;
@@ -487,7 +482,6 @@ header {
     }
   }
   .counter {
-    // flex-wrap: nowrap;
     width: 448px;
     margin: auto;
     margin-bottom: 48px;
@@ -543,6 +537,14 @@ header {
         font-weight: bold;
         span {
           opacity: 0.4; 
+        }
+      }
+      img {
+        transition: 0.2s;
+      }
+      .arrow {
+        &.rotate {
+          transform: rotate(180deg);
         }
       }
     }
@@ -721,21 +723,20 @@ header {
       bottom: 0;
       height: 603px;
       background-size: 2036px 2036px;
-      background-position: -707px -601px;
+      background-position: -707px -337px;
       &--is-signup {
         position: absolute;
         top: 0;
         right: 0;
         width: 420px;
         height: 100vh;
-        background-position: -852px -279px;
+        background-position: -852px -337px;
       }
     }
     .form {
       margin: 0;
       position: absolute;
       width: 445px;
-      // height: 508px;
       left: calc(100% - 610px);
       top: 237px;
       box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);

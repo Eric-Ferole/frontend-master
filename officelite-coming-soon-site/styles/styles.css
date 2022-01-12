@@ -110,8 +110,6 @@ header .header__content .button {
   line-height: 1.75rem;
   color: #fff;
   text-decoration: none;
-  -webkit-box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
-          box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -259,7 +257,7 @@ header .header__content .button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 13px;
+  gap: 16px;
 }
 
 .counter .counter__countdown .counter__container {
@@ -390,7 +388,6 @@ header .header__content .button:hover {
 }
 
 .form .theform .form-control input {
-  color: rgba(116, 123, 149, 0.5);
   display: block;
   outline: none;
   border: none;
@@ -398,6 +395,22 @@ header .header__content .button:hover {
   height: 20px;
   margin-bottom: 24px;
   padding: 0 0 0 16px;
+}
+
+.form .theform .form-control input::-webkit-input-placeholder {
+  color: rgba(116, 123, 149, 0.5);
+}
+
+.form .theform .form-control input:-ms-input-placeholder {
+  color: rgba(116, 123, 149, 0.5);
+}
+
+.form .theform .form-control input::-ms-input-placeholder {
+  color: rgba(116, 123, 149, 0.5);
+}
+
+.form .theform .form-control input::placeholder {
+  color: rgba(116, 123, 149, 0.5);
 }
 
 .form .theform .form-control select {
@@ -435,8 +448,6 @@ header .header__content .button:hover {
 .form .theform .button {
   outline: none;
   border: none;
-  -webkit-box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
-          box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
   display: inline-block;
   background: #5175FF;
   border-radius: 28px;
@@ -639,6 +650,14 @@ header .header__content .button:hover {
   }
   .select-wrapper .select .select__trigger span {
     opacity: 0.4;
+  }
+  .select-wrapper .select img {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .select-wrapper .select .arrow.rotate {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   .select-wrapper .select__options {
     position: absolute;
@@ -864,7 +883,7 @@ header .header__content .button:hover {
     bottom: 0;
     height: 603px;
     background-size: 2036px 2036px;
-    background-position: -707px -601px;
+    background-position: -707px -337px;
   }
   body .footer-background--is-signup {
     position: absolute;
@@ -872,7 +891,7 @@ header .header__content .button:hover {
     right: 0;
     width: 420px;
     height: 100vh;
-    background-position: -852px -279px;
+    background-position: -852px -337px;
   }
   body .form {
     margin: 0;
