@@ -21,14 +21,16 @@ validateOnEntry = () => {
 }
 
 // Select toggle
-
 const select = document.querySelector('.select-wrapper');
 const basicPack = document.querySelector('#basic-pack');
 const proPack = document.querySelector('#pro-pack');
 const ultimatePack = document.querySelector('#ultimate-pack');
+const arrow = document.querySelector('.arrow')
+console.log(arrow)
 
 select.addEventListener('click', () => {
   document.querySelector('.select__options').classList.toggle('open');
+  document.querySelector('.arrow').classList.toggle('rotate');
 })
 
 const checkInputs = () => {
