@@ -216,7 +216,7 @@ header {
     line-height: 3rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    // margin-bottom: 18px;
     color: white;
     &--is-dark {
       color: #25293A;
@@ -602,7 +602,7 @@ header {
 
 @media only screen and (min-width: 1440px) {
   body {
-    background-position: 656px -419px;
+    background-position: 655px -417px;
     background-size: 1134px 1134px;
     header {
       margin: 0 auto 112px auto;
@@ -674,7 +674,7 @@ header {
         flex-direction: column;
         padding: 40px;
         &--is-blue {
-          background-position: center -391px;
+          background-position: center -379px;
         }
         .card__header {
           margin-bottom: 56px;
@@ -714,16 +714,16 @@ header {
       }
       .button {
         position: absolute;
-        top: 78px;
+        top: 59px;
         right: 0;
         margin-bottom: 0;
       }
     }
     .footer-background {
       bottom: 0;
-      height: 603px;
+      height: 602px;
       background-size: 2036px 2036px;
-      background-position: -707px -337px;
+      background-position: -703px -615px;
       &--is-signup {
         position: absolute;
         top: 0;

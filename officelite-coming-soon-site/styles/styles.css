@@ -239,7 +239,6 @@ header .header__content .button:hover {
   line-height: 3rem;
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-bottom: 18px;
   color: white;
 }
 
@@ -731,7 +730,7 @@ header .header__content .button:hover {
 
 @media only screen and (min-width: 1440px) {
   body {
-    background-position: 656px -419px;
+    background-position: 655px -417px;
     background-size: 1134px 1134px;
   }
   body header {
@@ -832,7 +831,7 @@ header .header__content .button:hover {
     padding: 40px;
   }
   body .cards .card--is-blue {
-    background-position: center -391px;
+    background-position: center -379px;
   }
   body .cards .card .card__header {
     margin-bottom: 56px;
@@ -875,15 +874,15 @@ header .header__content .button:hover {
   }
   body .counter .button {
     position: absolute;
-    top: 78px;
+    top: 59px;
     right: 0;
     margin-bottom: 0;
   }
   body .footer-background {
     bottom: 0;
-    height: 603px;
+    height: 602px;
     background-size: 2036px 2036px;
-    background-position: -707px -337px;
+    background-position: -703px -615px;
   }
   body .footer-background--is-signup {
     position: absolute;
