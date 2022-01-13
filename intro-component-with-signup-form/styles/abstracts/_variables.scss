@@ -29,9 +29,12 @@ $brand-color: rgba(255, 121, 121, 1) !default;
 // Secondary
 $secondary: rgba(94, 84, 164, 1) !default;
 
+// Accent
+$accent: rgba(56, 204, 139, 1) !default;
+
 /// Light grey
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$light-grey: #BAB7D4 !default;
 
 /// Medium grey
 /// @type Color
@@ -39,7 +42,7 @@ $mid-grey: rgb(153, 153, 153) !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
+$dark-grey:rgba(61, 59, 72, 0.75) !default;
 
 
 
