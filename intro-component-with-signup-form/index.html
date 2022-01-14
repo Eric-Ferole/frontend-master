@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="/js/form-validation.js" defer></script>
   <title>Document</title>
 </head>
 <body>
@@ -20,28 +21,28 @@
     <div class="c-form">
       <form action="" class="form">
         <div class="form-control">
-          <input type="text" id="first-name" value="" placeholder="First Name">
+          <input type="text" id="first-name" value="" placeholder="First Name" autocomplete="username">
           <i class="bi bi-check-circle-fill"></i>
           <i class="bi bi-exclamation-circle-fill"></i>
-          <small>Error message</small>  
+          <small class="small hidden">Error message</small>  
         </div>
         <div class="form-control">
-          <input type="text" id="last-name" value="" placeholder="Last Name">
+          <input type="text" id="last-name" value="" placeholder="Last Name" autocomplete="family-name">
           <i class="bi bi-check-circle-fill"></i>
           <i class="bi bi-exclamation-circle-fill"></i>
-          <small>Error message</small>  
+          <small class="small hidden">Error message</small>  
         </div>
         <div class="form-control">
-          <input type="text" id="email" value="" placeholder="Email Address">
+          <input type="text" id="email" value="" placeholder="Email Address" autocomplete="email">
           <i class="bi bi-check-circle-fill"></i>
           <i class="bi bi-exclamation-circle-fill"></i>
-          <small>Error message</small>  
+          <small class="small hidden">Error message</small>  
         </div>
         <div class="form-control">
-          <input type="password" id="password" value="" placeholder="Password">
+          <input type="password" id="password" value="" placeholder="Password" autocomplete="current-password">
           <i class="bi bi-check-circle-fill"></i>
           <i class="bi bi-exclamation-circle-fill"></i>
-          <small>Error message</small>  
+          <small class="small hidden">Error message</small>  
         </div>
         <button class="button">Claim your free trial</button>
         <div class="form__terms-condition">
@@ -50,6 +51,5 @@
       </form>
     </div>
   </main>
-  
 </body>
 </html>
