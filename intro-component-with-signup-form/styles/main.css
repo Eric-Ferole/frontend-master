@@ -447,7 +447,6 @@ body {
   color: #fff;
   background: #38cc8b;
   border: 0;
-  outline: 0;
   -webkit-box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
           box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
   border-radius: 5px;
@@ -548,6 +547,26 @@ h1 {
   color: #2ecc71;
 }
 
+.c-form form .form-control.error input {
+  border: #ff7979 2px solid;
+}
+
+.c-form form .form-control.error input::-webkit-input-placeholder {
+  color: #ff7979;
+}
+
+.c-form form .form-control.error input:-ms-input-placeholder {
+  color: #ff7979;
+}
+
+.c-form form .form-control.error input::-ms-input-placeholder {
+  color: #ff7979;
+}
+
+.c-form form .form-control.error input::placeholder {
+  color: #ff7979;
+}
+
 .c-form form .form-control.error i.bi-exclamation-circle-fill {
   color: #ff7979;
 }
@@ -558,6 +577,11 @@ h1 {
   border: 1px solid #DEDEDE;
   outline: 0;
   padding-left: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: #3D3B48;
 }
 
 .c-form form .form-control input::-webkit-input-placeholder {
@@ -592,6 +616,10 @@ h1 {
   color: rgba(61, 59, 72, 0.75);
 }
 
+.c-form form .form-control input:focus {
+  border: #5e54a4 1px solid;
+}
+
 .c-form form .form-control i {
   position: absolute;
   top: 15px;
@@ -599,6 +627,7 @@ h1 {
 }
 
 .c-form form .form-control small {
+  display: none;
   color: #ff7979;
   font-style: italic;
   font-weight: normal;
@@ -619,5 +648,53 @@ h1 {
 .c-form form .form__terms-condition span {
   color: #ff7979;
   font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main {
+    width: 540px;
+    margin: 0;
+  }
+  body main .c-form {
+    padding: 40px;
+  }
+  body main .c-form form {
+    position: relative;
+    gap: 0;
+  }
+  body main .c-form form .form-control {
+    margin-bottom: 20px;
+  }
+  body main .c-form form .form-control input {
+    padding-left: 32px;
+  }
+  body main .c-form form .form__terms-condition {
+    line-height: 26px;
+    margin-top: 8px;
+  }
+  body header {
+    width: 525px;
+    text-align: left;
+    margin: 0 45px 0 0;
+  }
+  body header h1 {
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -0.520833px;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

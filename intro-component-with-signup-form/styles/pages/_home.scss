@@ -68,7 +68,13 @@ h1 {
           color: #2ecc71;
         }
       }
-      &.error {
+      &.error { 
+        input {
+          border: $brand-color 2px solid;
+          &::placeholder {
+            color: $brand-color;
+          }
+        }
         i.bi-exclamation-circle-fill {
           color: $brand-color;
         }
@@ -79,12 +85,20 @@ h1 {
         border: 1px solid #DEDEDE;
         outline: 0;
         padding-left: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 0.25px;
+        color: #3D3B48;
         &::placeholder {
           font-weight: 600;
           font-size: 14px;
           line-height: 26px;
           letter-spacing: 0.25px;
           color: $dark-grey;
+        }
+        &:focus {
+          border: $secondary 1px solid;
         }
       }
       i {
@@ -93,6 +107,7 @@ h1 {
         right: 27px;
       }
       small {
+        display: none;
         color: $brand-color;
         font-style: italic;
         font-weight: normal;
@@ -111,6 +126,48 @@ h1 {
       span {
         color: $brand-color;
         font-weight: 700;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    main {
+      width: 540px;
+      margin: 0;
+      .c-form {
+        padding: 40px;
+        form {
+          position: relative;
+          gap: 0;
+          .form-control {
+            margin-bottom: 20px;
+            input {
+              padding-left: 32px;
+            }  
+          }
+          .form__terms-condition {
+            line-height: 26px;
+            margin-top: 8px;
+          }
+        }
+      }  
+    }
+    header {
+      width: 525px;
+      text-align: left;
+      margin: 0 45px 0 0;
+      h1 {
+        font-size: 50px;
+        line-height: 55px;
+        letter-spacing: -0.520833px;
+        margin-top: 0;
+        margin-bottom: 32px;
       }
     }
   }
