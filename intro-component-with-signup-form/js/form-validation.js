@@ -44,7 +44,7 @@ const checkInputs = () => {
   
   if(emailValue === '') {
     setErrorFor(email, 'Looks like this is not an email');
-  } else if(!isEmail(emailValue)) {
+  } else if(!isEmail(emailValue)) { // Go to isEmail function
     setErrorFor(email, 'This in not a valid email');
   } else {
     setSuccesFor(email);
@@ -72,20 +72,17 @@ const setErrorFor = (input, message) => {
 }
 
 const setSuccesFor = input => {
-  const formControl = document.querySelector('.form-control');
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
 
   // Add success class
   formControl.className = 'form-control success'
+
+  //  Remove the error message
+  small.classList.add('hidden');
+
 }
 
 const isEmail = email => {
   return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
-
-// This function validate the form on entry
-
-// const validateOnEntry = () => {
-//   fields.forEach(field => {
-
-//   })
-// }
