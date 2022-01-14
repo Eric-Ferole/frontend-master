@@ -544,7 +544,15 @@ h1 {
 }
 
 .c-form form .form-control.success i.bi-check-circle-fill {
-  color: #2ecc71;
+  color: #38cc8b;
+}
+
+.c-form form .form-control.success i.bi-exclamation-circle-fill {
+  visibility: hidden;
+}
+
+.c-form form .form-control.success .hidden {
+  display: none;
 }
 
 .c-form form .form-control.error input {
@@ -569,6 +577,10 @@ h1 {
 
 .c-form form .form-control.error i.bi-exclamation-circle-fill {
   color: #ff7979;
+}
+
+.c-form form .form-control.error i.bi-check-circle-fill {
+  visibility: hidden;
 }
 
 .c-form form .form-control input {
@@ -627,7 +639,6 @@ h1 {
 }
 
 .c-form form .form-control small {
-  display: none;
   color: #ff7979;
   font-style: italic;
   font-weight: normal;
@@ -635,6 +646,10 @@ h1 {
   line-height: 16px;
   text-align: right;
   margin-top: 6px;
+}
+
+.c-form form .form-control small.hidden {
+  display: none;
 }
 
 .c-form form .form__terms-condition {

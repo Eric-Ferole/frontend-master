@@ -65,7 +65,13 @@ h1 {
       position: relative;
       &.success {
         i.bi-check-circle-fill {
-          color: #2ecc71;
+          color: $accent;
+        }
+        i.bi-exclamation-circle-fill {
+          visibility: hidden;
+        }
+        .hidden {
+          display: none;
         }
       }
       &.error { 
@@ -77,6 +83,9 @@ h1 {
         }
         i.bi-exclamation-circle-fill {
           color: $brand-color;
+        }
+        i.bi-check-circle-fill {
+          visibility: hidden;
         }
       }
       input {
@@ -107,7 +116,6 @@ h1 {
         right: 27px;
       }
       small {
-        display: none;
         color: $brand-color;
         font-style: italic;
         font-weight: normal;
@@ -115,6 +123,9 @@ h1 {
         line-height: 16px;
         text-align: right;
         margin-top: 6px;
+        &.hidden {
+          display: none;
+        }
       }
     }
     .form__terms-condition {
