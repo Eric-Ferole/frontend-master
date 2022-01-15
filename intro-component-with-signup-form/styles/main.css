@@ -468,7 +468,7 @@ body {
 body {
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  background: url("/images/bg-intro-mobile.png") #ff7979;
+  background: url("images/bg-intro-mobile.png") #ff7979;
   text-align: center;
 }
 
