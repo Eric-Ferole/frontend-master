@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend+Deca&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -446,7 +447,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0 24px;
+  background-color: #0a0c1c;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
 }
 
 .card {
@@ -458,16 +468,19 @@ body {
 
 .card .card__image {
   position: relative;
+  background-color: #fff;
 }
 
-.card .card__image ::before {
-  position: absolute;
+.card .card__image::before {
+  background: #ab5cdb;
+  content: "";
   top: 0;
   left: 0;
-  background-color: #ab5cdb;
-  content: "";
-  width: 100%;
   height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  position: absolute;
+  width: 100%;
 }
 
 .card .card__image img {
@@ -530,5 +543,6 @@ body {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
+  font-family: 'Lexend Deca', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
