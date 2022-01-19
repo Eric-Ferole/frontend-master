@@ -503,7 +503,6 @@ body {
   font-weight: bold;
   font-size: 28px;
   line-height: 32px;
-  text-align: center;
 }
 
 .card .card__body .card__content .card__title span {
@@ -544,5 +543,50 @@ body {
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
   font-family: 'Lexend Deca', sans-serif;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    max-width: 1110px;
+    max-height: 446px;
+  }
+  .card .card__image img {
+    width: 540px;
+    height: 446px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card .card__body {
+    text-align: left;
+    padding: 71px 95px 0 71px;
+  }
+  .card .card__body .card__content {
+    margin-bottom: 72px;
+  }
+  .card .card__body .card__content .card__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+  }
+  .card .card__body .card__content .card__description {
+    width: 374px;
+  }
+  .card .card__body .numbers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 62px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
