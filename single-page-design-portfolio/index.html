@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Single-page design portfolio | Frontend Mentor</title>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary">
+      <div class="nav-wrapper">
+        <img src="/assets/logo.svg" alt="logo" class="logo">
+        <a class="button button--is-black" href="#">Free Consultation</a>  
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="services">
+      <div class="services__container">
+        <div class="services__content">
+          <h1>Design solutions made easy</h1>
+          <p>With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>  
+        </div>
+        <div class="services__categories">
+          <div class="services__category design">
+            <p class="services__category-description">Graphic Design</p>
+          </div>
+          <div class="services__category uiux">
+            <p class="services__category-description">UI/UX</p>
+          </div>
+          <div class="services__category  apps">
+            <p class="services__category-description">Apps</p>
+          </div>
+          <div class="services__category photography">
+            <p class="services__category-description">Photography</p>
+          </div>
+          <div class="services__category illustration">
+            <p class="services__category-description">Illustrations</p>
+          </div>
+          <div class="services__category motion">
+            <p class="services__category-description">Motion Design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="about-us__container">
+        <div class="about-us__wrapper">
+          <img src="/assets/image-amy.webp" alt="Amy graphic designer">
+          <div class="about-us__content-block">
+            <h2>I’m Amy, and I’d love to work on your next project</h2>
+            <p>  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+            <a class="button button--secondary" href="#">Free Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-work">
+      <div class="my-work__container">
+        <h3>My work</h3>
+        <div class="slider">
+
+          <div class="my-slider">
+            <div class="slider__item">
+              <img src="/assets/image-slide-1.jpg" alt="Graphic Design">
+            </div>
+            <div class="slider__item">
+              <img src="/assets/image-slide-2.jpg" alt="UI/UX">
+            </div>
+            <div class="slider__item">
+              <img src="/assets/image-slide-3.jpg" alt="Apps">
+            </div>
+            <div class="slider__item">
+              <img src="/assets/image-slide-4.jpg" alt="Photography">
+            </div>
+            <div class="slider__item">
+              <img src="/assets/image-slide-5.jpg" alt="Illustrations">
+            </div>
+          </div>
+          <div class="controls" id="custom-control">
+            <div class="control-btn prev"></div>
+            <div class="control-btn next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="cta__container">
+        <div class="cta__content">
+          <div class="cta__text-block">
+            <h2>Book a call with me</h2>
+            <p>I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+          </div>
+        <a class="button button--secondary" href="#">Free Consultation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__container">
+      <img src="/assets/logo.svg" alt="logo">
+      <a class="button button--is-black" href="#">Free Consultation</a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script type="module">
+    var slider = tns({
+      container: '.my-slider',
+      items: 3,
+      // slideBy: 'page',
+      gutter: 30,
+      speed: 1000,
+      slideBy: 1,
+      mouseDrag: true,
+      controlsContainer: '#custom-control',
+      nav: false,
+      responsive: {
+        0: {
+          items: 2
+        },
+        680: {
+          items: 2
+        },
+        1200: {
+          items: 3
+        }
+      }
+    });
+    </script>
+</body>
+</html>
