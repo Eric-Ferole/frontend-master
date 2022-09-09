@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #F2F2F2;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.75;
+  color: #FFFFFF;
+}
+
+.button {
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 8px 32px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 25px;
+  border: solid 2px #fff;
+  transition: 0.3s;
+  &--is-orange {
+    color: #E28625;
+    &:hover {
+      background-color: #E28625;
+      border: solid 2px #fff;
+      color: #fff;
+    }
+  }
+  &--is-green {
+    color: #006971;
+    &:hover {
+      background-color: #006971;
+      border: solid 2px #fff;
+      color: #fff;
+    }
+  }
+  &--is-dark-green {
+    color: #004140;
+    &:hover {
+      background-color: #004140;
+      border: solid 2px #fff;
+      color: #fff;
+    }
+  }
+}
+
+.cards-container {
+  width: 920px;
+  border-radius: 8px;
+  overflow: scroll;
+  display: flex;
+  overflow: hidden;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    padding: 48px;
+    .card__header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 83px;
+    }
+    &--is-orange {
+      background-color: #E28625;
+    }
+    &--is-green {
+      background-color: #006971;
+    }
+    &--is-dark-green {
+      background-color: #004140;
+    }
+  }
+}
+
+@media screen and (max-width: 748px) {
+  .cards-container {
+    flex-direction: column;
+    padding: 88px 24px;
+    height: 100%;
+    overflow: scroll;
+    .card {
+      &--is-orange {
+        border-radius: 8px 8px 0 0;
+      }
+      &--is-dark-green {
+        border-radius: 0 0 8px 8px;
+      }
+    }
+  }
+}

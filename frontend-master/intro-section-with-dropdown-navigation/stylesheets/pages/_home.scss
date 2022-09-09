@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+h1 {
+  max-width: 540px;
+  margin: 0;
+}
+
+p {
+  max-width: 445px;
+  margin: 0;
+}
+
+.content * {
+  margin-bottom: 48px;
+  margin-right: 125px;
+}
+
+.content :nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.content {
+  margin-bottom: 108px;
+}
+
+main {
+  margin-top: 130px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+// img {
+//   margin-left: 125px;
+// }

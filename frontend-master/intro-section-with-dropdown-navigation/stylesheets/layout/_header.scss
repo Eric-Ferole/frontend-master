@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+  display: flex;
+  padding: 20px 40px 0 40px;
+  align-items: center;
+  nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #686868;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-left: 24px;
+      }
+    }
+    .nav__main {
+      display: inline-flex;
+      align-items: center;
+    }
+    .nav__secondary {
+      display: flex;
+      align-items: center;
+      .nav__list-item {
+        margin-right: 40px;
+      } 
+    }
+  }
+}

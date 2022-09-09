@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <script src="js/form-validator.js" defer></script>
+  <script src="js/countdown.js" defer></script>
+  <title>Frontend Mentor | Officelite coming soon site</title>
+</head>
+<body class="signup">
+  <header class="signup">
+    <div class="header__logo header__logo--is-signup">
+      <a href="index.html"><img src="images/logo.svg" alt="Officelite Logo"></a> 
+    </div>
+    <div class="header__hero header__hero--is-signup">
+      <div class="header__content header__content--is-signup">
+      <h1 class="title-signup">Work smarter. Save time.</h1>
+      <p class="header__description header__description--is-signup">Easily manage your projects. Get on the list and receive in-app perks available only to early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+    </div>
+    </div>
+  </header>
+  <section class="counter counter--is-signup">
+    <div class="counter__title counter__title--is-dark counter__title--is-signup">Coming <span>4 Nov 2020</span></div>
+    <div class="counter__countdown">
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="days">47</div>
+        <div class="counter__time-unit counter__time-unit--is-grey">days</div>
+      </div>
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="hours">7</div>
+        <div class="counter__time-unit counter__time-unit--is-grey">hours</div>
+      </div>
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="minutes">39</div>
+        <div class="counter__time-unit counter__time-unit--is-grey">min</div>
+      </div>
+      <div class="counter__container counter__container--is-pale">
+        <div class="counter__number counter__number--is-pale" id="seconds">42</div>
+        <div class="counter__time-unit counter__time-unit--is-grey  ">sec</div>
+      </div>
+    </div>
+  </section>
+  <div class="form">
+    <form action="post" class="theform" id="form">
+      <div class="form-control">
+        <input type="text" id="fullname" value="" placeholder="Name">
+        <i class="bi bi-check-circle-fill"></i>
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <input type="text" id="email" value="" placeholder="Email Address">
+        <i class="bi bi-check-circle-fill"></i>
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <small>Error message</small>
+      </div>
+      <div class="select-wrapper">
+        <div class="select">
+            <div class="select__trigger">Basic Pack<span>&nbsp;&nbsp;Free</span></div>
+            <img class="arrow" src="images/icon-arrow-down.svg" alt="Arrow down icon">
+        </div>
+        <div  class="select__options open">
+          <div id="basic-pack" class="select__row">
+              <div  class="select__pack" data-value="Basic Pack">Basic Pack  <span>&nbsp;&nbsp;Free</span></div>
+              <img class="check" src="images/icon-check.svg" alt="check icon">
+          </div>
+          <div id="pro-pack" class="select__row">
+              <div  class="select__pack" data-value="Pro Pack">Pro Pack <span>&nbsp;&nbsp;$9.99</span></div>
+              <img class="check" src="images/icon-check.svg" alt="check icon">  
+          </div>
+          <div id="ultimate-pack" class="select__row">
+              <div  class="select__pack" data-value="Ultimate Pack">Ultimate Pack&nbsp;&nbsp;<span> $19.99</span></div>
+              <img class="check" src="images/icon-check.svg" alt="check icon">  
+          </div>
+        </div>
+      </div>
+      <div class="form-control">
+        <input type="text" id="phone" value="" placeholder="Phone Number">
+        <i class="bi bi-check-circle-fill"></i>
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <small>Error message</small>
+      </div>
+      <div class="form-control">
+        <input type="text" id="company" value="" placeholder="Company">
+        <i class="bi bi-check-circle-fill"></i>
+        <i class="bi bi-exclamation-circle-fill"></i>
+        <small>Error message</small>
+      </div>
+      <button class="button">Get on the list</button>
+    </form>
+  </div>
+  <div class="footer-background footer-background--is-signup">
+  </div>
+</body>
+</html>
